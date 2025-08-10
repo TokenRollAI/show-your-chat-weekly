@@ -35,7 +35,7 @@ def generate_weekly_report():
     # 生成markdown内容
     markdown = f"""---
 title: Show Your Chat 周报 - {today} 
-date: {current_time}
+date: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
 categories:
   - 周报
 ---
@@ -44,15 +44,16 @@ categories:
 
 ## 强烈推荐!
 
-{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in greats]) if greats else "本周暂无强烈推荐内容。\n"}
+{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in greats])}
 
 ## 本周的Chat 
 
-{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in chat_issues]) if chat_issues else "本周暂无新的Chat分享。\n"}
+{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in chat_issues])}
 
 ## 本周的Prompt
 
-{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in prompt_issues]) if prompt_issues else "本周暂无新的Prompt分享。\n"}
+{"".join([f"- [{issue.title}]({issue.html_url})\n" for issue in prompt_issues])}
+
 
 ## 关于Show Your Chat
 
