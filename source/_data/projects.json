@@ -1,0 +1,17 @@
+[
+    {
+       "name":"recorder",
+       "url":"https://recorder.tokenroll.ai/",
+       "desc":"SOP Coding"
+    },
+    {
+       "name":"Show Your Chat",
+       "url":"https://github.com/TokenRollAI/show-your-chat",
+       "desc":"Code is cheap, show me your chat!"
+    },
+    {
+       "name":"TokenRoll AI",
+       "url":"https://github.com/TokenRollAI",
+       "desc":"专注于AI技术创新和应用的团队"
+    }
+]
