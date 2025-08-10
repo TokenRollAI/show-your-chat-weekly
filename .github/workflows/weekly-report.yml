@@ -1,10 +1,16 @@
 name: Generate Weekly Report
 
 on:
+  workflow_dispatch: # 允许手动触发
   schedule:
     # 每周一上午8点 (UTC时间0点，北京时间8点)
     - cron: '0 0 * * 1'
-  workflow_dispatch: # 允许手动触发
+
+permissions:
+  contents: write
+  issues: read
+  pull-requests: read
+  discussions: read
 
 jobs:
   generate-report:
