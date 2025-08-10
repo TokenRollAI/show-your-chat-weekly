@@ -54,7 +54,7 @@ theme_config:
     grayout: true
 
   # RSS配置
-  rss: true
+  rss: atom.xml
 
   # 404页面配置
   error_404:
