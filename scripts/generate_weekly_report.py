@@ -62,6 +62,8 @@ categories:
 [Github链接](https://github.com/TokenRollAI/show-your-chat)
 
 欢迎star, 欢迎投稿. 欢迎分享你和AI的Chat. 
+
+[*Show Your Chat 周报*](https://show-your-chat.tokenroll.ai/)
 """
     
     # 确保目录存在
